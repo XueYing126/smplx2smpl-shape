@@ -1,6 +1,6 @@
 datasets:
     mesh_folder:
-        data_folder: 'meshes/smplx'
+        data_folder: 'transfer_data/meshes/amass_sample/'
 deformation_transfer_path: 'transfer_data/smplx2smpl_deftrafo_setup.pkl'
 mask_ids_fname: ''
 summary_steps: 100

@@ -85,6 +85,14 @@ def main() -> None:
             exp_cfg, batch, body_model, def_matrix, mask_ids)
         paths = batch['paths']
 
+        print()
+        print('betas: ')
+        betas = var_dict['betas'].detach().cpu().numpy()[0]
+        print([float(f"{num:.2f}") for num in betas])
+        print()
+        np.save('./transfer_data/meshes/amass_sample/002_smplx.npy', batch['vertices'].detach().cpu().numpy())
+        np.save('./transfer_data/meshes/amass_sample/002_smpl.npy', var_dict['vertices'].detach().cpu().numpy())
+
         for ii, path in enumerate(paths):
             _, fname = osp.split(path)
 
