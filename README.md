@@ -1,4 +1,5 @@
 ## tranfer shape space from smplx to smpl 
+Follow this repository to transfer SMPL-X shape to SMPL shape.
 
 ### Install environment:
 ```
