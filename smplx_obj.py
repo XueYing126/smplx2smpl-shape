@@ -12,7 +12,7 @@ from smplx.joint_names import Body
 from tqdm.auto import tqdm, trange
 
 gender = 'female'
-betas = [1.6, -2.5, 0.4, 0.9, 0.9, 0.6, -0.1, -0.4, 0.5, -0.4]
+betas =  [2.21, 0.09, 1.08, -0.36, -1.59, -0.28, -1.96, 1.18, -1.62, -0.45]
 
 
 model_folder='./transfer_data/body_models'
@@ -26,7 +26,7 @@ model = smplx.create(
     use_face_contour=False,
     num_betas=num_betas,
     num_expression_coeffs=10,
-    use_pca=False,
+    use_pca=True,
     ext='npz',
 )
 

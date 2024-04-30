@@ -12,10 +12,11 @@ optim:
     type: 'lbfgs'
     maxiters: 200
     gtol: 1e-06
+    ftol: 1e-10
 
 body_model:
     model_type: "smpl"
-    gender: "neutral"
+    gender: "female"
     ext: 'pkl'
     folder: "transfer_data/body_models"
     use_compressed: False
